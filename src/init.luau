@@ -2,7 +2,7 @@ local DiscordLuau = require("@Discord-Luau/init")
 local Env = require("../.env")
 
 --// local Intents = DiscordLuau.IntentsBuilder.new({  })
-local Settings = DiscordLuau.SettingsBuilder.new(Env.METEORIUM_TOKEN)
+local Settings = DiscordLuau.SettingsBuilder.new(Env.METEORIUM_BOT_TOKEN)
 local Client = DiscordLuau.DiscordClient.new(Settings)
 
 Client.eventManager.onReady:connect(function()
