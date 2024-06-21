@@ -34,13 +34,13 @@ function LoggingNamespace.registerNamespace(self: LoggingNamespace, name: string
     return namespace
 end
 
-function LoggingNamespace.getNamespace(self: LoggingNamespace, name: string): LoggingNamespace?
+function LoggingNamespace.getNamespace(self: LoggingNamespace, name: string): LoggingNamespace
     for _, namespace in self.namespaces do
         if (namespace.name == name) then
             return namespace
         end
     end
-    return nil
+    return self:registerNamespace(name)
 end
 
 function LoggingNamespace.write(_: LoggingNamespace, color: stdio.Color, ... : any)
@@ -89,13 +89,13 @@ function Logging.registerNamespace(self: Logging, name: string): LoggingNamespac
     return namespace
 end
 
-function Logging.getNamespace(self: Logging, name: string): LoggingNamespace?
+function Logging.getNamespace(self: Logging, name: string): LoggingNamespace
     for _, namespace in self.namespaces do
         if (namespace.name == name) then
             return namespace
         end
     end
-    return nil
+    return self:registerNamespace(name)
 end
 
 return { new = constructor_Logging }
