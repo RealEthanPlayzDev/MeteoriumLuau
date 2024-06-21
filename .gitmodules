@@ -1,0 +1,3 @@
+[submodule "deps/Discord-Luau"]
+	path = deps/Discord-Luau
+	url = https://github.com/DiscordLuau/Discord-Luau.git

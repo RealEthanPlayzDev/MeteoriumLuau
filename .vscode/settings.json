@@ -1,0 +1,20 @@
+{
+  "luau-lsp.require.mode": "relativeToFile",
+  "luau-lsp.require.directoryAliases": {
+    "@lune/": "~/.lune/.typedefs/0.8.5/",
+    "@Discord-Luau": "./deps/Discord-Luau",
+    "@Builders": "./deps/Discord-Luau/Package/Classes/Builders",
+		"@Network": "./deps/Discord-Luau/Package/Classes/Network",
+		"@Objects": "./deps/Discord-Luau/Package/Classes/Objects",
+		"@Data": "./deps/Discord-Luau/Package/Data",
+		"@Enums": "./deps/Discord-Luau/Package/Enums",
+		"@Std": "./deps/Discord-Luau/Package/Std",
+		"@Utils": "./deps/Discord-Luau/Package/Utils",
+		"@Vendor": "./deps/Discord-Luau/Package/Vendor"
+  },
+  "luau-lsp.types.roblox": false,
+  "luau-lsp.ignoreGlobs": [
+    "**/_Index/**",
+    "deps/**"
+  ]
+}
