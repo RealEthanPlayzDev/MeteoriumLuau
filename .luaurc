@@ -1,6 +1,8 @@
 {
 	"languageMode": "strict",
-	"lint": {},
+	"lint": {
+		"LocalShadow": false
+	},
 	"aliases": {
 		"Builders": "./deps/Discord-Luau/Package/Classes/Builders",
 		"Network": "./deps/Discord-Luau/Package/Classes/Network",
