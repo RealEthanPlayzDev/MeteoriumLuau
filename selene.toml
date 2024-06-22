@@ -1,3 +1,5 @@
-[rules]
+exclude = ["deps/**/*"]
+
+[lints]
 multiple_statements = "allow"
 parenthese_conditions = "allow"

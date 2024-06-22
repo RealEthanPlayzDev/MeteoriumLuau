@@ -16,5 +16,6 @@
   "luau-lsp.ignoreGlobs": [
     "**/_Index/**",
     "deps/**"
-  ]
+  ],
+  "luau-lsp.sourcemap.enabled": false
 }
